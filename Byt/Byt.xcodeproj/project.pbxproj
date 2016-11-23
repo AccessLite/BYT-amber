@@ -12,7 +12,7 @@
 		70EAC4F81DE53270003CA218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EAC4F61DE53270003CA218 /* Main.storyboard */; };
 		70EAC4FA1DE53270003CA218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70EAC4F91DE53270003CA218 /* Assets.xcassets */; };
 		70EAC4FD1DE53270003CA218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EAC4FB1DE53270003CA218 /* LaunchScreen.storyboard */; };
-		70EAC50A1DE532FE003CA218 /* Fooas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC5091DE532FE003CA218 /* Fooas.swift */; };
+		70EAC50A1DE532FE003CA218 /* Foaas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC5091DE532FE003CA218 /* Foaas.swift */; };
 		70EAC50C1DE5330A003CA218 /* FoaasOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC50B1DE5330A003CA218 /* FoaasOperation.swift */; };
 		70EAC50E1DE5332E003CA218 /* FoaasField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC50D1DE5332E003CA218 /* FoaasField.swift */; };
 		70EAC5101DE53379003CA218 /* FooasProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC50F1DE53379003CA218 /* FooasProtocol.swift */; };
@@ -26,7 +26,7 @@
 		70EAC4F91DE53270003CA218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70EAC4FC1DE53270003CA218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70EAC4FE1DE53270003CA218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70EAC5091DE532FE003CA218 /* Fooas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fooas.swift; sourceTree = "<group>"; };
+		70EAC5091DE532FE003CA218 /* Foaas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foaas.swift; sourceTree = "<group>"; };
 		70EAC50B1DE5330A003CA218 /* FoaasOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoaasOperation.swift; sourceTree = "<group>"; };
 		70EAC50D1DE5332E003CA218 /* FoaasField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoaasField.swift; sourceTree = "<group>"; };
 		70EAC50F1DE53379003CA218 /* FooasProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooasProtocol.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		70EAC5051DE532A3003CA218 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				70EAC5091DE532FE003CA218 /* Fooas.swift */,
+				70EAC5091DE532FE003CA218 /* Foaas.swift */,
 				70EAC50B1DE5330A003CA218 /* FoaasOperation.swift */,
 				70EAC50D1DE5332E003CA218 /* FoaasField.swift */,
 			);
@@ -188,7 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70EAC50A1DE532FE003CA218 /* Fooas.swift in Sources */,
+				70EAC50A1DE532FE003CA218 /* Foaas.swift in Sources */,
 				70EAC50E1DE5332E003CA218 /* FoaasField.swift in Sources */,
 				70EAC5101DE53379003CA218 /* FooasProtocol.swift in Sources */,
 				70EAC4F51DE53270003CA218 /* ViewController.swift in Sources */,
@@ -353,6 +353,7 @@
 				70EAC5031DE53270003CA218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

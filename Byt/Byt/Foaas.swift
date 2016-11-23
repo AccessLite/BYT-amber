@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Fooas: JSONConvertible, CustomStringConvertible {
+class Foaas: JSONConvertible, CustomStringConvertible {
     
     var message: String
     var subtitle: String

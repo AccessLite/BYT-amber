@@ -11,9 +11,9 @@ import Foundation
 class FoaasOperation: JSONConvertible, DataConvertible {
     var name: String
     var url: String
-    var fields: [[String:AnyObject]]
+    var fields: [FoaasField]
     
-    init(name: String, url: String, fields: [[String:AnyObject]]) {
+    init(name: String, url: String, fields: [FoaasField]) {
         self.name = name
         self.url = url
         self.fields = fields
@@ -23,7 +23,14 @@ class FoaasOperation: JSONConvertible, DataConvertible {
         guard let name = json["name"] as? String,
         let url = json["url"] as? String,
             let fields = json["fields"] as? [[String: AnyObject]] else { return nil }
-        self.init(name: name, url: url, fields: fields)
+        
+        var fieldsArray: [FoaasField] = []
+        
+        for element in fields {
+            fieldsArray.append(FoaasField(json: element)!)
+        }
+        
+        self.init(name: name, url: url, fields: fieldsArray)
     }
     
     convenience required init?(data: Data) {
