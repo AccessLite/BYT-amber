@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7076B7251DE8FD5100B4C517 /* FoaasDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7076B7241DE8FD5100B4C517 /* FoaasDataManager.swift */; };
+		70DAA9111DE6C53700838A08 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DAA9101DE6C53700838A08 /* ApiManager.swift */; };
 		70EAC4F31DE53270003CA218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC4F21DE53270003CA218 /* AppDelegate.swift */; };
 		70EAC4F51DE53270003CA218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC4F41DE53270003CA218 /* ViewController.swift */; };
 		70EAC4F81DE53270003CA218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EAC4F61DE53270003CA218 /* Main.storyboard */; };
@@ -16,9 +18,12 @@
 		70EAC50C1DE5330A003CA218 /* FoaasOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC50B1DE5330A003CA218 /* FoaasOperation.swift */; };
 		70EAC50E1DE5332E003CA218 /* FoaasField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC50D1DE5332E003CA218 /* FoaasField.swift */; };
 		70EAC5101DE53379003CA218 /* FooasProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC50F1DE53379003CA218 /* FooasProtocol.swift */; };
+		70EAC5141DE5737F003CA218 /* OperationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EAC5131DE5737F003CA218 /* OperationsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7076B7241DE8FD5100B4C517 /* FoaasDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoaasDataManager.swift; sourceTree = "<group>"; };
+		70DAA9101DE6C53700838A08 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		70EAC4EF1DE53270003CA218 /* Byt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Byt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EAC4F21DE53270003CA218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70EAC4F41DE53270003CA218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		70EAC50B1DE5330A003CA218 /* FoaasOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoaasOperation.swift; sourceTree = "<group>"; };
 		70EAC50D1DE5332E003CA218 /* FoaasField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoaasField.swift; sourceTree = "<group>"; };
 		70EAC50F1DE53379003CA218 /* FooasProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooasProtocol.swift; sourceTree = "<group>"; };
+		70EAC5131DE5737F003CA218 /* OperationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,8 @@
 		70EAC5061DE532AB003CA218 /* Managagers */ = {
 			isa = PBXGroup;
 			children = (
+				70DAA9101DE6C53700838A08 /* ApiManager.swift */,
+				7076B7241DE8FD5100B4C517 /* FoaasDataManager.swift */,
 			);
 			name = Managagers;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				70EAC4F41DE53270003CA218 /* ViewController.swift */,
+				70EAC5131DE5737F003CA218 /* OperationsTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -188,7 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DAA9111DE6C53700838A08 /* ApiManager.swift in Sources */,
 				70EAC50A1DE532FE003CA218 /* Foaas.swift in Sources */,
+				7076B7251DE8FD5100B4C517 /* FoaasDataManager.swift in Sources */,
+				70EAC5141DE5737F003CA218 /* OperationsTableViewController.swift in Sources */,
 				70EAC50E1DE5332E003CA218 /* FoaasField.swift in Sources */,
 				70EAC5101DE53379003CA218 /* FooasProtocol.swift in Sources */,
 				70EAC4F51DE53270003CA218 /* ViewController.swift in Sources */,

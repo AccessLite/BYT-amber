@@ -19,7 +19,7 @@ class FoaasOperation: JSONConvertible, DataConvertible {
         self.fields = fields
     }
     
-    convenience required init?(json: [String: AnyObject]) {
+    required convenience init?(json: [String: AnyObject]) {
         guard let name = json["name"] as? String,
         let url = json["url"] as? String,
             let fields = json["fields"] as? [[String: AnyObject]] else { return nil }

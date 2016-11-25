@@ -9,16 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var octoButton: UIImageView!
+    @IBAction func octoTapped(_ sender: UITapGestureRecognizer) {
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.tappedMe))
+        octoButton.addGestureRecognizer(tap)
+        octoButton.isUserInteractionEnabled = true
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tappedMe(){
+        performSegue(withIdentifier: "goToOperationsTable", sender: self)
     }
+
+
 
 
 }
