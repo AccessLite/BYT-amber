@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     }
     
     func tappedMe(){
+        // Tapped what? More decription function names: should describe the action in proper tense,
+        // ie. didTapOperationsButton
         performSegue(withIdentifier: "goToOperationsTable", sender: self)
     }
 

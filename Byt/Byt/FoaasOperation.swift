@@ -21,8 +21,9 @@ class FoaasOperation: JSONConvertible, DataConvertible {
     
     required convenience init?(json: [String: AnyObject]) {
         guard let name = json["name"] as? String,
-        let url = json["url"] as? String,
-            let fields = json["fields"] as? [[String: AnyObject]] else { return nil }
+            let url = json["url"] as? String,
+            let fields = json["fields"] as? [[String: AnyObject]]
+        else { return nil }
         
         var fieldsArray: [FoaasField] = []
         
@@ -51,8 +52,9 @@ class FoaasOperation: JSONConvertible, DataConvertible {
     
     
     func toJson() -> [String: AnyObject] {
-        let json: [String: AnyObject] = ["name": name as AnyObject, "url" : url as AnyObject, "fields" : fields as AnyObject]
-        return json
+        return [ "name": name as AnyObject,
+                 "url" : url as AnyObject,
+                 "fields" : fields as AnyObject ] // This will not work because [FoaasField] is not a valid type to be stored in UserDefaults. Convert fields into [[String : String]] first
     }
     
     func toData() throws -> Data {
